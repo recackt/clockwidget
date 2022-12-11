@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>greetings</title>
+    <title>Greetings</title>
 
     <style>
 
@@ -25,24 +25,31 @@
             margin: auto;
             border: 3px solid #94B0B7;
             border-radius: 5px;
-            box-shadow: 2px 2px 1px 0px #7697A0;
+            box-shadow: 3px 3px 1px 0px #7697A0;
 
         }
 
            
         .greet{
+            font-family: monaco;
             font-size: 2em;
+            letter-spacing: 0.2em;
+            font-weight: 700;
+            line-height: 100%;
         }
 
         .date {
       
-            font-family: "Monaco", monospace;
-            font-size: 1em;
+            font-family: "Andale Mono";
+            font-size: 1.5em;
+            letter-spacing: 0.2em;
+            font-weight: 500;
+            line-height: 100%;
         }
 
         .clock {
             font-family: monospace;
-            font-size: 1em;
+            font-size: 1.2em;
         }
 
         .time {
@@ -96,7 +103,7 @@ function dispalyGreetings(today){
         hrs = today.getHours();
         name=""
         if (hrs < 12)
-            greet = 'Good Morning  '+name;
+            greet = 'Good Morning '+name;
         else if (hrs >= 12 && hrs <= 17)
             greet = 'Good Afternoon '+name;
         else if (hrs >= 17 && hrs <= 24)
